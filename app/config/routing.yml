@@ -1,8 +1,21 @@
-guest_book:
-    resource: "@GuestBookBundle/Controller/"
+user:
+    resource: "@UserBundle/Controller/"
     type:     annotation
-    prefix:   /
+    prefix:   /api/v1
 
-app:
-    resource: "@AppBundle/Controller/"
-    type:     annotation
+
+
+
+app.reviews:
+    type: rest
+    resource: AppBundle\Controller\ReviewController
+    prefix: /api/v1
+
+
+
+NelmioApiDocBundle:
+    resource: "@NelmioApiDocBundle/Resources/config/routing.yml"
+    prefix:   /api/doc
+
+fos_oauth_server_token:
+    resource: "@FOSOAuthServerBundle/Resources/config/routing/token.xml"

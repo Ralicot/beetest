@@ -1,6 +1,6 @@
 <?php
 
-namespace GuestBookBundle\Tests\Controller;
+namespace UserBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
